@@ -3,6 +3,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import io.opentelemetry.exporter.logging.SystemOutLogExporter;
+
 public class Assignment5 {
 
 	public static void main(String[] args) {
@@ -17,6 +19,11 @@ public class Assignment5 {
 		System.out.println(driver.findElement(By.xpath("//div[text()='MIDDLE']")).getText());
 		System.out.println(driver.findElement(By.xpath("//div[text()='MIDDLE']")).getText());
 		System.out.println(driver.findElement(By.xpath("//div[text()='MIDDLE']")).getText());
+		driver.manage().window().maximize();
+		System.out.println("hello 1");
+		System.out.println("hello 2");
+		System.out.println("hello 2");
+		System.out.println("hello 2");
 		
 
 	}
