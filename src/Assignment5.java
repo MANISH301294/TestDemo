@@ -10,10 +10,12 @@ public class Assignment5 {
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Manish\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
+		
 		driver.get("https://the-internet.herokuapp.com/nested_frames");
 		driver.switchTo().frame(driver.findElement(By.xpath("//frame[@name='frame-top']")));
 		driver.switchTo().frame(driver.findElement(By.xpath("//frame[@name='frame-middle']")));
+		System.out.println(driver.findElement(By.xpath("//div[text()='MIDDLE']")).getText());
+		System.out.println(driver.findElement(By.xpath("//div[text()='MIDDLE']")).getText());
 		System.out.println(driver.findElement(By.xpath("//div[text()='MIDDLE']")).getText());
 		
 
